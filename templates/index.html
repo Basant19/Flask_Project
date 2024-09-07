@@ -1,0 +1,52 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraped Data</title>
+</head>
+<body>
+    <h1>Scraped Data from YouTube and Amazon</h1>
+    
+    <h2>YouTube Videos</h2>
+    <ul>
+        {% for video in youtube %}
+        <li><a href="{{ video.link }}">{{ video.title }}</a></li>
+        {% endfor %}
+    </ul>
+    
+    <h2>Amazon Products</h2>
+    <ul>
+        {% for product in amazon %}
+        <li>{{ product.title }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scraped Data</title>
+</head>
+<body>
+    <h1>Scraped Data from YouTube and Amazon</h1>
+    
+    <h2>YouTube Videos</h2>
+    <ul>
+        {% for video in youtube %}
+        <li><a href="{{ video.link }}">{{ video.title }}</a></li>
+        {% endfor %}
+    </ul>
+    
+    <h2>Amazon Products</h2>
+    <ul>
+        {% for product in amazon %}
+        <li>{{ product.title }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
